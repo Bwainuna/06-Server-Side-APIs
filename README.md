@@ -25,3 +25,9 @@ Screenshots of deployed app:
 ![Deployed Screenshot 3]()
 
 Sources that were used during this assignment came from class in canvas, as well as through the resources listed below:
+
+Display Search History in Html JavaScript and jQuery https://youtu.be/IrQss691cdE?si=W94YN8Nt_bW5_g1V by Web Dev
+
+Build A Weather App in HTML CSS and JavaScript | Weather App Project HTML CSS and JavaScript https://youtu.be/SeXg3AX82ig?si=5GkSrwhi4niJ5_dd by CodingNepal
+
+ChatGPT by OpenAI @ https://openai.com/blog/chatgpt
