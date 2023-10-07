@@ -20,10 +20,10 @@
     gap: 35px;
     padding: 30px;
 }
-.weather-input {
+.weather_input {
     width: 550 px;
 }
-.weather-input input {
+.weather_input input {
     width: 100%;
     height: 30px;
     outline: none;
@@ -33,7 +33,7 @@
     border-radius: 4px;
     border: 1px solid #f3f3f3;
 }
-.weather-input button {
+.weather_input button {
     width: 100%;
     padding: 10px 0;
     cursor: pointer;
@@ -44,10 +44,10 @@
     border-radius: 4px;
     background-color: #2e0058;
 }
-.weather-input .search-history {
+.weather_input .search-history {
     background: #8933da;
 }
-.weather-input .divider {
+.weather_input .divider {
     height: 1px;
     width: 100%;
     background: #bbb;
@@ -56,7 +56,7 @@
     align-items: center;
     justify-content: center;
 }
-.weather-input .divider::before {
+.weather_input .divider::before {
   content: "Search History";
   color: #f3f3f3;
   font-size: 12px;
@@ -64,10 +64,10 @@
   margin-top: -4px;
   background: #150022;
 }
-.weather-data {
+.weather_data {
     width: 100%;
 }
-.current-weather {
+.current_weather {
     background: #2e0058;
     color: #f3f3f3;
     padding: 20px 70px 20px 20px;
@@ -75,31 +75,31 @@
     justify-content: space-between;
     display: flex;
 }
-.current-weather h2 {
+.current_weather h2 {
     font-size: 16px;
 }
-.current-weather h4 {
+.current_weather h4 {
     margin-top: 12px;
     font-size: 16px;
     font-weight:500;
 }
-.current-weather .icon img {
+.current_weather .icon img {
     max-width: 120px;
     margin-top: -15px;
 }
-.current-weather .icon h4 {
+.current_weather .icon h4 {
     margin-top: -10px;
     text-transform: capitalize;
 }
-.days-forecast h2 {
+.days_forecast h2 {
     font-size: 16px;
     margin: 20px 0;
 }
-.weather-cards {
+.weather_cards {
     display: flex;
     gap: 20px;
 }
-.weather-cards .card {
+.weather_cards .card {
     list-style: none;
     background: #2e0058;
     color: #f3f3f3;
@@ -107,13 +107,13 @@
     border-radius: 5px;
     width: calc(100% / 5);
 }
-.weather-cards .card h2 {
+.weather_cards .card h2 {
     font-size: 16px;
 }
-.weather-cards .card h4 {
+.weather_cards .card h4 {
     font-size: 12px;
 }
-.weather-cards .card img {
+.weather_cards .card img {
     max-width: 70px;
     margin: 5px 0 -12px 0;
 }
