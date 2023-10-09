@@ -2,9 +2,12 @@ const searchButton = document.querySelector('.search_btn');
 const weatherCardsDiv = document.querySelector('.weather_cards');
 const currentWeather = document.querySelector('.current_weather');
 const cityInput = document.querySelector('.input');
-const searchHistoryContainer = document.querySelector('.search_history_container'); // Added this line
+const searchHistoryContainer = document.querySelector('.search_history_container');
+const clearHistoryButton = document.querySelector('.clear-history-button'); // Added this line
+
 const API_KEY = "5f125cc3c4a753f2b1176b743f50edbf";
 
+// Function to save searched city to local storage
 const saveToLocalStorage = (city) => {
   let cities = JSON.parse(localStorage.getItem("cities")) || [];
   if (!cities.includes(city)) {
@@ -13,6 +16,7 @@ const saveToLocalStorage = (city) => {
   }
 };
 
+// Function to display search history
 const displaySearchHistory = () => {
   const cities = JSON.parse(localStorage.getItem("cities")) || [];
   // Clear previous search history
@@ -31,6 +35,7 @@ const displaySearchHistory = () => {
   });
 };
 
+// Function to create a weather card
 const createWeatherCard = (cityName, weatherItem, index) => {
   // Convert Kelvin to Fahrenheit
   const temperatureFahrenheit = ((weatherItem.main.temp - 273.15) * 9 / 5 + 32).toFixed(1);
@@ -60,8 +65,9 @@ const createWeatherCard = (cityName, weatherItem, index) => {
         <h4>Humidity: ${weatherItem.main.humidity}%</h4>
     </li>`;
   }
-}
+};
 
+// Function to get weather details
 const getWeatherDetails = (cityName, lat, lon) => {
   const WEATHER_API_URL = `https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&appid=${API_KEY}`;
 
@@ -96,8 +102,9 @@ const getWeatherDetails = (cityName, lat, lon) => {
     .catch(() => {
       alert("An error occurred while fetching the coordinates.");
     });
-}
+};
 
+// Function to fetch city coordinates
 const cityCoordinates = () => {
   const cityName = cityInput.value.trim();
   if (!cityName) return;
@@ -117,5 +124,17 @@ const cityCoordinates = () => {
     });
 };
 
+// Function to clear search history
+const clearSearchHistory = () => {
+  localStorage.removeItem("cities"); // Remove the search history data
+  displaySearchHistory(); // Update the displayed search history
+};
+
+// Add a click event listener to the Search button
 searchButton.addEventListener("click", cityCoordinates);
-window.onload = displaySearchHistory; // Display search history when the page loads
+
+// Add a click event listener to the Clear History button
+clearHistoryButton.addEventListener("click", clearSearchHistory);
+
+// Display search history when the page loads
+window.onload = displaySearchHistory;

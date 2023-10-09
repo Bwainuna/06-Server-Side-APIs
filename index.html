@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,7 +10,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Montserrat&display=swap" rel="stylesheet">
 </head>
-
 <body class="body">
     <section>
         <h1 class="h1">Weather Dashboard</h1>
@@ -23,15 +21,16 @@
                 </div>
                 <button class="search_btn">Get Weather</button>
                 <section class="divider"></section>
-                <button class="search_history"><div class="search_history_container"></div></button>
+                <div class="search_history_container"></div> <!-- Displayed search history container -->
+                <button class="clear-history-button">Clear Search History</button> <!-- Clear History button -->
             </section>
             <section class="weather_data">
                 <section class="current_weather">
                     <section class="details">
                         <h2>_______ ( _______ )</h2>
                         <h4>Temperature: _______</h4>
-                            <h4>Wind: _______ MPH</h4>
-                            <h4>Humidity: _______</h4>
+                        <h4>Wind: _______ MPH</h4>
+                        <h4>Humidity: _______</h4>
                     </section>
                 </section>
                 <section class="days_forecast">
@@ -43,35 +42,12 @@
                             <h4>Wind: _______ MPH</h4>
                             <h4>Humidity: _______</h4>
                         </li>
-                        <li class="card">
-                            <h2>( _______ )</h2>
-                            <h4>Temperature: _______</h4>
-                            <h4>Wind: _______ MPH</h4>
-                            <h4>Humidity: _______</h4>
-                        </li>
-                        <li class="card">
-                            <h2>( _______ )</h2>
-                            <h4>Temperature: _______</h4>
-                            <h4>Wind: _______ MPH</h4>
-                            <h4>Humidity: _______</h4>
-                        </li>
-                        <li class="card">
-                            <h2>( _______ )</h2>
-                            <h4>Temperature: _______</h4>
-                            <h4>Wind: _______ MPH</h4>
-                            <h4>Humidity: _______</h4>
-                        </li>
-                        <li class="card">
-                            <h2>( _______ )</h2>
-                            <h4>Temperature: _______</h4>
-                            <h4>Wind: _______ MPH</h4>
-                            <h4>Humidity: _______</h4>
-                        </li>
+                        <!-- More forecast cards here -->
                     </ul>
                 </section>
             </section>
         </section>
-        <script src="./Develop/script.js"></script>
+    </section>
+    <script src="./Develop/script.js"></script>
 </body>
-
 </html>
