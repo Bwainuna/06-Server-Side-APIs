@@ -20,9 +20,7 @@ THEN I am again presented with current and future conditions for that city
 
 Screenshots of deployed app:
 
-![Deployed Screenshot 1]()
-![Deployed Screenshot 2]()
-![Deployed Screenshot 3]()
+Screenshot 1 - ![Deployed Application](photos/06-Deployed.png)
 
 Sources that were used during this assignment came from class in canvas, as well as through the resources listed below:
 
