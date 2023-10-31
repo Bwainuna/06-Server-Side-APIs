@@ -1,4 +1,4 @@
-# 06-Server-Side-APIs
+# Server-Side-APIs
 
 User Story
 
